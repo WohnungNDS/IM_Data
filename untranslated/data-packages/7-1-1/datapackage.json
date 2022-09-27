@@ -15,26 +15,48 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Migrationsstatus",
             "type": "string",
             "constraints": {
               "enum": [
-                "Wohnfläche in qm",
-                "Bruttokaltmiete in €",
+                "mit und ohne Migrationshintergrund",
+                "ohne Migrationshintergrund",
+                "mit Migrationshintergrund",
                 ""
               ]
             }
           },
           {
-            "name": "Migrationsstatus",
+            "name": "Lebennsform",
             "type": "string",
             "constraints": {
               "enum": [
                 "Insgesamt",
-                "ohne Migrationshintergrund",
-                "mit Migrationshintergrund",
-                "dav. mit eigener Migrationserfahrung",
-                "dav.ohne eigene Migrationserfahrung",
+                "Ehepaare",
+                "Lebensgemeinschaften",
+                "Alleinerziehende",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "mit oder ohne ledige Kinder",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "ohne ledige Kinder",
+                "mit ledigen Kindern",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "in 1 000",
                 ""
               ]
             }

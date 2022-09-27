@@ -15,36 +15,50 @@
             "type": "integer"
           },
           {
-            "name": "Migrationshuntergrund",
+            "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
-                "mit und ohne Migrationshintergrund",
-                "ohne Migrationshintergrund",
-                "mit Migrationshintergrund",
+                "Deutsche",
+                "Ausländerinnen und Ausländer",
                 ""
               ]
             }
           },
           {
-            "name": "Geschlecht",
+            "name": "Schulart",
             "type": "string",
             "constraints": {
               "enum": [
                 "Insgesamt",
-                "Männer",
-                "Frauen",
+                "Berufsschule (Teilzeit)",
+                "Berufseinstiegsklasse2)",
+                "Berufsvorbereitungsjahr2)",
+                "Berufseinstiegsschule3)",
+                "Berufsfachschule",
+                "Fachoberschule",
+                "Berufsoberschule",
+                "Berufl. Gymnasium",
+                "Fachschule",
                 ""
               ]
             }
           },
           {
-            "name": "Migrationserfahrung",
+            "name": "Erreichter Abschluss",
             "type": "string",
             "constraints": {
               "enum": [
-                "mit eigener Migrationserfahrung",
-                "ohne eigene Migrationserfahrung",
+                "Insgesamt",
+                "Allgemeine Hochschulreife ¹⁾",
+                "Fachhochschulreife",
+                "Schulischer Teil der Fachhochschulreife",
+                "Realschulabschluss",
+                "Hauptschulabschluss",
+                "Erfolgreicher Besuch",
+                "Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen",
+                "Ohne erfolgreichen Besuch/Abschluss",
+                "nachrichtlich: Abbruch im laufenden Schuljahr",
                 ""
               ]
             }
@@ -54,7 +68,8 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "%",
+                "Anzahl",
+                "Prozent",
                 ""
               ]
             }

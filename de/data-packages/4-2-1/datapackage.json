@@ -16,17 +16,30 @@
             "title": "Jahr"
           },
           {
-            "name": "Nationalität",
+            "name": "Höchster Beruflicher Abschluss",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
-                "Deutsche",
-                "Ausländerinnen und Ausländer",
+                "Ohne Abschluss1)",
+                "Abgeschlossene Berufsausbildung",
+                "Tertiärer Abschluss",
                 ""
               ]
             },
-            "title": "Nationalität"
+            "title": "Höchster Beruflicher Abschluss"
+          },
+          {
+            "name": "Migrationshintergrund",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "mit und ohne Migrationshintergrund",
+                "mit Migrationshintergrund3)",
+                "ohne Migrationshintergrund",
+                ""
+              ]
+            },
+            "title": "Migrationshintergrund"
           },
           {
             "name": "Geschlecht",
@@ -46,7 +59,7 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Prozent",
+                "%",
                 ""
               ]
             },
@@ -63,5 +76,5 @@
   ],
   "profile": "data-package",
   "name": "4-2-1",
-  "title": "Ausbildungsbeteiligungsquote im dualen System nach Geschlecht und Nationalität"
+  "title": "Höchster beruflicher Abschluss der 25- bis unter 35-Jährigen nach Zuwanderungsgeschichte und Geschlecht (in Prozent)"
 }

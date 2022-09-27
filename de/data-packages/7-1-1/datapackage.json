@@ -16,31 +16,55 @@
             "title": "Jahr"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Wohnfläche in qm",
-                "Bruttokaltmiete in €",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Migrationsstatus",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
+                "mit und ohne Migrationshintergrund",
                 "ohne Migrationshintergrund",
                 "mit Migrationshintergrund",
-                "dav. mit eigener Migrationserfahrung",
-                "dav.ohne eigene Migrationserfahrung",
                 ""
               ]
             },
             "title": "Migrationsstatus"
+          },
+          {
+            "name": "Lebennsform",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "Ehepaare",
+                "Lebensgemeinschaften",
+                "Alleinerziehende",
+                ""
+              ]
+            },
+            "title": "Lebennsform"
+          },
+          {
+            "name": "mit oder ohne ledige Kinder",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "ohne ledige Kinder",
+                "mit ledigen Kindern",
+                ""
+              ]
+            },
+            "title": "mit oder ohne ledige Kinder"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "in 1 000",
+                ""
+              ]
+            },
+            "title": "Units"
           },
           {
             "name": "Value",
@@ -53,5 +77,5 @@
   ],
   "profile": "data-package",
   "name": "7-1-1",
-  "title": "Mittlere Wohnfläche in m² und mittlere Bruttokaltmiete in Niedersachsen nach Zuwanderungsgeschichte"
+  "title": "Paare ohne Kinder und Familien nach Paar-Familientyp und Zuwanderungsgeschichte sowie Familien nach Zahl der Kinder (in 1000)"
 }

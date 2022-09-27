@@ -16,28 +16,72 @@
             "title": "Jahr"
           },
           {
-            "name": "Abschlussart",
+            "name": "Gebietseinheit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Hochschulreife",
-                "Fachhochschulreife1)",
-                "Realschulabschluss",
-                "Hauptschulabschluss",
-                "Abschluss Förderschule2)",
-                "Ohne Abschluss",
-                "Insgesamt",
+                "Braunschweig  Stadt",
+                "Salzgitter  Stadt",
+                "Wolfsburg  Stadt",
+                "Gifhorn",
+                "Goslar",
+                "Helmstedt",
+                "Northeim",
+                "Peine",
+                "Wolfenbüttel",
+                "Göttingen",
+                "Statistische Region Braunschweig",
+                "Hannover  Region",
+                "dav. Hannover  Lhst.",
+                "dav. Hannover  Umland",
+                "Diepholz",
+                "Hameln-Pyrmont",
+                "Hildesheim",
+                "Holzminden",
+                "Nienburg (Weser)",
+                "Schaumburg",
+                "Statistische Region Hannover",
+                "Celle",
+                "Cuxhaven",
+                "Harburg",
+                "Lüchow-Dannenberg",
+                "Lüneburg",
+                "Osterholz",
+                "Rotenburg (Wümme)",
+                "Heidekreis",
+                "Stade",
+                "Uelzen",
+                "Verden",
+                "Statistische Region Lüneburg",
+                "Delmenhorst  Stadt",
+                "Emden  Stadt",
+                "Oldenburg(Oldb)  Stadt",
+                "Osnabrück  Stadt",
+                "Wilhelmshaven  Stadt",
+                "Ammerland",
+                "Aurich",
+                "Cloppenburg",
+                "Emsland",
+                "Friesland",
+                "Grafschaft Bentheim",
+                "Leer",
+                "Oldenburg",
+                "Osnabrück",
+                "Vechta",
+                "Wesermarsch",
+                "Wittmund",
+                "Statistische Region Weser-Ems",
+                "Niedersachsen",
                 ""
               ]
             },
-            "title": "Abschlussart"
+            "title": "Gebietseinheit"
           },
           {
             "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
                 "Deutsche",
                 "Ausländerinnen und Ausländer",
                 ""
@@ -46,8 +90,25 @@
             "title": "Nationalität"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Anzahl",
+                "Prozent",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -56,5 +117,5 @@
   ],
   "profile": "data-package",
   "name": "4-1-4",
-  "title": "Schulabgängerinnen und Schulabgänger nach Nationalität und Abschlussart (in Prozet)"
+  "title": "Schulabgängerinnen und Schulabgänger ohne Hauptschulabschluss nach Nationalität"
 }

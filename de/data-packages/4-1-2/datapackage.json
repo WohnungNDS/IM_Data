@@ -16,35 +16,28 @@
             "title": "Jahr"
           },
           {
-            "name": "Gebietseinheit",
+            "name": "Abschlussart",
             "type": "string",
             "constraints": {
               "enum": [
-                "Statistische Region Braunschweig",
-                "Statistische Region Hannover",
-                "Statistische Region Lüneburg",
-                "Statistische Region Weser-Ems",
-                "Niedersachsen",
+                "Hochschulreife",
+                "Fachhochschulreife1)",
+                "Realschulabschluss",
+                "Hauptschulabschluss",
+                "Abschluss Förderschule2)",
+                "Ohne Abschluss",
+                "Insgesamt",
                 ""
               ]
             },
-            "title": "Gebietseinheit"
-          },
-          {
-            "name": "Unnamed: 2",
-            "type": "number",
-            "constraints": {
-              "enum": [
-                ""
-              ]
-            },
-            "title": "Unnamed: 2"
+            "title": "Abschlussart"
           },
           {
             "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
+                "Insgesamt",
                 "Deutsche",
                 "Ausländerinnen und Ausländer",
                 ""
@@ -53,42 +46,8 @@
             "title": "Nationalität"
           },
           {
-            "name": "Schulform",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Hauptschule",
-                "Realschule",
-                "Oberschule",
-                "Gymnasium",
-                "Integrierte Gesamtschule",
-                "Förderschule",
-                "Insgesamt",
-                ""
-              ]
-            },
-            "title": "Schulform"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Prozent",
-                "Anzahl",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string",
-            "title": "GeoCode"
-          },
-          {
             "name": "Value",
-            "type": "string",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -97,5 +56,5 @@
   ],
   "profile": "data-package",
   "name": "4-1-2",
-  "title": "Verteilung der Schülerinnen und Schüler im 8. Schuljahrgang"
+  "title": "Schulabgängerinnen und Schulabgänger nach Nationalität und Abschlussart"
 }

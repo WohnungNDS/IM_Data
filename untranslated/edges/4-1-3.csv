@@ -1,2 +1,3 @@
 From,To
-Gebietseinheit,Nationalität
+Altersgruppe,Schulabschluss
+Schulabschluss,Migrationsstatus

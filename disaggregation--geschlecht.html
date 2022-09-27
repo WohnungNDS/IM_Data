@@ -51,15 +51,41 @@
                 .table-striped tbody tr:nth-of-type(2n+1) {
                     background-color: #f3f2f1;
                 }
+                #skiplink {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    z-index: 10000;
+                    width: 250px;
+                    margin-left: -125px;
+                    padding: 10px;
+                    background: white;
+                    text-align: center;
+                    border: 1px solid #0b0c0c;
+                    color: #0b0c0c;
+                    display: block;
+                }
+                .sr-only-focusable:not(:focus):not(:focus-within) {
+                    position: absolute !important;
+                    width: 1px !important;
+                    height: 1px !important;
+                    padding: 0 !important;
+                    margin: -1px !important;
+                    overflow: hidden !important;
+                    clip: rect(0, 0, 0, 0) !important;
+                    white-space: nowrap !important;
+                    border: 0 !important;
+                }
             </style>
         </head>
         <body>
+            <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">SDG data build documentation</a>
                 </div>
             </nav>
-            <main role="main">
+            <main id="main-content" role="main">
                 <div class="container">
                     <h1 style="margin:20px 0">Disaggregation: Geschlecht</h1>
                     <div>
@@ -76,12 +102,12 @@
             
         <div class="my-3">
             <a href="values--disaggregation--geschlecht.csv" role="button" class="btn btn-primary" aria-describedby="values--disaggregation--geschlecht">Download CSV of values used in this disaggregation</a>
-            <div id="values--disaggregation--geschlecht" class="download-info">Size: 178 Bytes</div>
+            <div id="values--disaggregation--geschlecht" class="download-info">Size: 249 Bytes</div>
         </div>
         
             
                 <div class="total-rows">
-                    Total rows: <span class="total">7</span>
+                    Total rows: <span class="total">10</span>
                 </div>
                 <table border="1" class="dataframe table table-striped table-bordered" id="values-table">
   <thead>
@@ -93,46 +119,61 @@
   </thead>
   <tbody>
     <tr>
+      <td><a href="disaggregation-value--15-bis-unter-20-jahre.html">15 bis unter 20 Jahre</a></td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--20-bis-unter-25-jahre.html">20 bis unter 25 Jahre</a></td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
       <td><a href="disaggregation-value--frauen.html">Frauen</a></td>
-      <td>194</td>
+      <td>192</td>
       <td>11</td>
     </tr>
     <tr>
+      <td><a href="disaggregation-value--insgesamt.html">insgesamt</a></td>
+      <td>1674</td>
+      <td>7</td>
+    </tr>
+    <tr>
       <td><a href="disaggregation-value--insgesamt_.html">Insgesamt</a></td>
-      <td>537</td>
+      <td>541</td>
       <td>14</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--männer.html">Männer</a></td>
-      <td>194</td>
+      <td>192</td>
       <td>11</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--männlich.html">Männlich</a></td>
+      <td><a href="disaggregation-value--männlich.html">männlich</a></td>
+      <td>1976</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--männlich_.html">Männlich</a></td>
       <td>28</td>
       <td>2</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--männlich_.html">männlich</a></td>
-      <td>312</td>
-      <td>1</td>
+      <td><a href="disaggregation-value--weiblich.html">weiblich</a></td>
+      <td>1975</td>
+      <td>8</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--weiblich.html">Weiblich</a></td>
+      <td><a href="disaggregation-value--weiblich_.html">Weiblich</a></td>
       <td>28</td>
       <td>2</td>
-    </tr>
-    <tr>
-      <td><a href="disaggregation-value--weiblich_.html">weiblich</a></td>
-      <td>312</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--frauen.html\">Frauen<\/a>","Disaggregation combinations using this value":194,"Number of indicators":11},{"Value":"<a href=\"disaggregation-value--insgesamt_.html\">Insgesamt<\/a>","Disaggregation combinations using this value":537,"Number of indicators":14},{"Value":"<a href=\"disaggregation-value--m\u00e4nner.html\">M\u00e4nner<\/a>","Disaggregation combinations using this value":194,"Number of indicators":11},{"Value":"<a href=\"disaggregation-value--m\u00e4nnlich.html\">M\u00e4nnlich<\/a>","Disaggregation combinations using this value":28,"Number of indicators":2},{"Value":"<a href=\"disaggregation-value--m\u00e4nnlich_.html\">m\u00e4nnlich<\/a>","Disaggregation combinations using this value":312,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--weiblich.html\">Weiblich<\/a>","Disaggregation combinations using this value":28,"Number of indicators":2},{"Value":"<a href=\"disaggregation-value--weiblich_.html\">weiblich<\/a>","Disaggregation combinations using this value":312,"Number of indicators":1}];
+            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--15-bis-unter-20-jahre.html\">15 bis unter 20 Jahre<\/a>","Disaggregation combinations using this value":3,"Number of indicators":2},{"Value":"<a href=\"disaggregation-value--20-bis-unter-25-jahre.html\">20 bis unter 25 Jahre<\/a>","Disaggregation combinations using this value":3,"Number of indicators":2},{"Value":"<a href=\"disaggregation-value--frauen.html\">Frauen<\/a>","Disaggregation combinations using this value":192,"Number of indicators":11},{"Value":"<a href=\"disaggregation-value--insgesamt.html\">insgesamt<\/a>","Disaggregation combinations using this value":1674,"Number of indicators":7},{"Value":"<a href=\"disaggregation-value--insgesamt_.html\">Insgesamt<\/a>","Disaggregation combinations using this value":541,"Number of indicators":14},{"Value":"<a href=\"disaggregation-value--m\u00e4nner.html\">M\u00e4nner<\/a>","Disaggregation combinations using this value":192,"Number of indicators":11},{"Value":"<a href=\"disaggregation-value--m\u00e4nnlich.html\">m\u00e4nnlich<\/a>","Disaggregation combinations using this value":1976,"Number of indicators":8},{"Value":"<a href=\"disaggregation-value--m\u00e4nnlich_.html\">M\u00e4nnlich<\/a>","Disaggregation combinations using this value":28,"Number of indicators":2},{"Value":"<a href=\"disaggregation-value--weiblich.html\">weiblich<\/a>","Disaggregation combinations using this value":1975,"Number of indicators":8},{"Value":"<a href=\"disaggregation-value--weiblich_.html\">Weiblich<\/a>","Disaggregation combinations using this value":28,"Number of indicators":2}];
             </script>
             
         </div>
@@ -141,12 +182,12 @@
             
         <div class="my-3">
             <a href="indicators--disaggregation--geschlecht.csv" role="button" class="btn btn-primary" aria-describedby="indicators--disaggregation--geschlecht">Download CSV of indicators using this disaggregation</a>
-            <div id="indicators--disaggregation--geschlecht" class="download-info">Size: 108 Bytes</div>
+            <div id="indicators--disaggregation--geschlecht" class="download-info">Size: 157 Bytes</div>
         </div>
         
             
                 <div class="total-rows">
-                    Total rows: <span class="total">14</span>
+                    Total rows: <span class="total">21</span>
                 </div>
                 <table border="1" class="dataframe table table-striped table-bordered" id="indicators-table">
   <thead>
@@ -159,22 +200,40 @@
       <td>#1-2-3</td>
     </tr>
     <tr>
+      <td>#1-2-7</td>
+    </tr>
+    <tr>
       <td>#1-3-3</td>
     </tr>
     <tr>
-      <td>#4-1-6</td>
+      <td>#2-1-1</td>
+    </tr>
+    <tr>
+      <td>#2-1-2</td>
+    </tr>
+    <tr>
+      <td>#2-1-3</td>
+    </tr>
+    <tr>
+      <td>#2-1-4</td>
+    </tr>
+    <tr>
+      <td>#2-1-5</td>
+    </tr>
+    <tr>
+      <td>#4-1-5</td>
     </tr>
     <tr>
       <td>#4-2-1</td>
+    </tr>
+    <tr>
+      <td>#4-2-2</td>
     </tr>
     <tr>
       <td>#4-3-2</td>
     </tr>
     <tr>
       <td>#4-4-1</td>
-    </tr>
-    <tr>
-      <td>#4-4-2</td>
     </tr>
     <tr>
       <td>#5-1-1</td>
@@ -195,6 +254,9 @@
       <td>#5-3-3</td>
     </tr>
     <tr>
+      <td>#5-3-4</td>
+    </tr>
+    <tr>
       <td>#8-1-1</td>
     </tr>
   </tbody>
@@ -202,7 +264,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['indicators-table'] = [{"Indicator":"#1-2-3"},{"Indicator":"#1-3-3"},{"Indicator":"#4-1-6"},{"Indicator":"#4-2-1"},{"Indicator":"#4-3-2"},{"Indicator":"#4-4-1"},{"Indicator":"#4-4-2"},{"Indicator":"#5-1-1"},{"Indicator":"#5-2-1"},{"Indicator":"#5-2-2"},{"Indicator":"#5-3-1"},{"Indicator":"#5-3-2"},{"Indicator":"#5-3-3"},{"Indicator":"#8-1-1"}];
+            sdgBuild.tables['indicators-table'] = [{"Indicator":"#1-2-3"},{"Indicator":"#1-2-7"},{"Indicator":"#1-3-3"},{"Indicator":"#2-1-1"},{"Indicator":"#2-1-2"},{"Indicator":"#2-1-3"},{"Indicator":"#2-1-4"},{"Indicator":"#2-1-5"},{"Indicator":"#4-1-5"},{"Indicator":"#4-2-1"},{"Indicator":"#4-2-2"},{"Indicator":"#4-3-2"},{"Indicator":"#4-4-1"},{"Indicator":"#5-1-1"},{"Indicator":"#5-2-1"},{"Indicator":"#5-2-2"},{"Indicator":"#5-3-1"},{"Indicator":"#5-3-2"},{"Indicator":"#5-3-3"},{"Indicator":"#5-3-4"},{"Indicator":"#8-1-1"}];
             </script>
             
         </div>

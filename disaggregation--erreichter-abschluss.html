@@ -51,15 +51,41 @@
                 .table-striped tbody tr:nth-of-type(2n+1) {
                     background-color: #f3f2f1;
                 }
+                #skiplink {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    z-index: 10000;
+                    width: 250px;
+                    margin-left: -125px;
+                    padding: 10px;
+                    background: white;
+                    text-align: center;
+                    border: 1px solid #0b0c0c;
+                    color: #0b0c0c;
+                    display: block;
+                }
+                .sr-only-focusable:not(:focus):not(:focus-within) {
+                    position: absolute !important;
+                    width: 1px !important;
+                    height: 1px !important;
+                    padding: 0 !important;
+                    margin: -1px !important;
+                    overflow: hidden !important;
+                    clip: rect(0, 0, 0, 0) !important;
+                    white-space: nowrap !important;
+                    border: 0 !important;
+                }
             </style>
         </head>
         <body>
+            <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">SDG data build documentation</a>
                 </div>
             </nav>
-            <main role="main">
+            <main id="main-content" role="main">
                 <div class="container">
                     <h1 style="margin:20px 0">Disaggregation: Erreichter Abschluss</h1>
                     <div>
@@ -76,12 +102,12 @@
             
         <div class="my-3">
             <a href="values--disaggregation--erreichter-abschluss.csv" role="button" class="btn btn-primary" aria-describedby="values--disaggregation--erreichter-abschluss">Download CSV of values used in this disaggregation</a>
-            <div id="values--disaggregation--erreichter-abschluss" class="download-info">Size: 581 Bytes</div>
+            <div id="values--disaggregation--erreichter-abschluss" class="download-info">Size: 424 Bytes</div>
         </div>
         
             
                 <div class="total-rows">
-                    Total rows: <span class="total">13</span>
+                    Total rows: <span class="total">10</span>
                 </div>
                 <table border="1" class="dataframe table table-striped table-bordered" id="values-table">
   <thead>
@@ -93,38 +119,33 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="disaggregation-value--allgemeine-hochschulreife.html">Allgemeine Hochschulreife</a></td>
-      <td>20</td>
+      <td><a href="disaggregation-value--allgemeine-hochschulreife-1.html">Allgemeine Hochschulreife ¹⁾</a></td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--entlassung-aus-dem-berufsvorbereitungsjahr.html">Entlassung aus dem Berufsvorbereitungsjahr</a></td>
-      <td>20</td>
+      <td><a href="disaggregation-value--entlassungen-aus-bvj-bzw-aus-den-bs-v-bildungslehrgängen.html">Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen</a></td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--entlassungen-aus-dem-berufsvorbereitungsjahr.html">Entlassungen aus dem Berufsvorbereitungsjahr</a></td>
-      <td>20</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="disaggregation-value--erfolgreicher-besuch2.html">Erfolgreicher Besuch²</a></td>
-      <td>20</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="disaggregation-value--erreichte-abschlüsse-insgesamt.html">Erreichte Abschlüsse insgesamt</a></td>
-      <td>20</td>
+      <td><a href="disaggregation-value--erfolgreicher-besuch.html">Erfolgreicher Besuch</a></td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--fachhochschulreife.html">Fachhochschulreife</a></td>
-      <td>20</td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--hauptschulabschluss.html">Hauptschulabschluss</a></td>
-      <td>20</td>
+      <td><a href="disaggregation-value--hauptschulabschluss_.html">Hauptschulabschluss</a></td>
+      <td>40</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><a href="disaggregation-value--insgesamt_.html">Insgesamt</a></td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
@@ -133,28 +154,18 @@
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--ohne-erfolgr-besuch-m-gleichz-erworb-hauptschulabschl.html">ohne erfolgr. Besuch m. gleichz. erworb. Hauptschulabschl.</a></td>
-      <td>20</td>
-      <td>1</td>
-    </tr>
-    <tr>
       <td><a href="disaggregation-value--ohne-erfolgreichen-besuchabschluss.html">Ohne erfolgreichen Besuch/Abschluss</a></td>
-      <td>20</td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--ohne-erfolgreichen-besuchabschluss_.html">ohne erfolgreichen Besuch/Abschluss</a></td>
-      <td>20</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><a href="disaggregation-value--realschulabschluss.html">Realschulabschluss</a></td>
-      <td>20</td>
+      <td><a href="disaggregation-value--realschulabschluss_.html">Realschulabschluss</a></td>
+      <td>40</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--schulischer-teil-der-fachhochschulreife.html">Schulischer Teil der Fachhochschulreife</a></td>
-      <td>20</td>
+      <td>40</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -162,7 +173,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--allgemeine-hochschulreife.html\">Allgemeine Hochschulreife<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--entlassung-aus-dem-berufsvorbereitungsjahr.html\">Entlassung aus dem Berufsvorbereitungsjahr<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--entlassungen-aus-dem-berufsvorbereitungsjahr.html\">Entlassungen aus dem Berufsvorbereitungsjahr<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--erfolgreicher-besuch2.html\">Erfolgreicher Besuch\u00b2<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--erreichte-abschl\u00fcsse-insgesamt.html\">Erreichte Abschl\u00fcsse insgesamt<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--fachhochschulreife.html\">Fachhochschulreife<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--hauptschulabschluss.html\">Hauptschulabschluss<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--nachrichtlich-abbruch-im-laufenden-schuljahr.html\">nachrichtlich: Abbruch im laufenden Schuljahr<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ohne-erfolgr-besuch-m-gleichz-erworb-hauptschulabschl.html\">ohne erfolgr. Besuch m. gleichz. erworb. Hauptschulabschl.<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ohne-erfolgreichen-besuchabschluss.html\">Ohne erfolgreichen Besuch\/Abschluss<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ohne-erfolgreichen-besuchabschluss_.html\">ohne erfolgreichen Besuch\/Abschluss<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--realschulabschluss.html\">Realschulabschluss<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--schulischer-teil-der-fachhochschulreife.html\">Schulischer Teil der Fachhochschulreife<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1}];
+            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--allgemeine-hochschulreife-1.html\">Allgemeine Hochschulreife \u00b9\u207e<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--entlassungen-aus-bvj-bzw-aus-den-bs-v-bildungslehrg\u00e4ngen.html\">Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrg\u00e4ngen<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--erfolgreicher-besuch.html\">Erfolgreicher Besuch<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--fachhochschulreife.html\">Fachhochschulreife<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--hauptschulabschluss_.html\">Hauptschulabschluss<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--insgesamt_.html\">Insgesamt<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--nachrichtlich-abbruch-im-laufenden-schuljahr.html\">nachrichtlich: Abbruch im laufenden Schuljahr<\/a>","Disaggregation combinations using this value":20,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--ohne-erfolgreichen-besuchabschluss.html\">Ohne erfolgreichen Besuch\/Abschluss<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--realschulabschluss_.html\">Realschulabschluss<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--schulischer-teil-der-fachhochschulreife.html\">Schulischer Teil der Fachhochschulreife<\/a>","Disaggregation combinations using this value":40,"Number of indicators":1}];
             </script>
             
         </div>
@@ -186,14 +197,14 @@
   </thead>
   <tbody>
     <tr>
-      <td>#4-1-1</td>
+      <td>#4-1-6</td>
     </tr>
   </tbody>
 </table>
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['indicators-table'] = [{"Indicator":"#4-1-1"}];
+            sdgBuild.tables['indicators-table'] = [{"Indicator":"#4-1-6"}];
             </script>
             
         </div>

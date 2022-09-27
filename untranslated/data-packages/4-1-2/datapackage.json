@@ -15,24 +15,17 @@
             "type": "integer"
           },
           {
-            "name": "Gebietseinheit",
+            "name": "Abschlussart",
             "type": "string",
             "constraints": {
               "enum": [
-                "Statistische Region Braunschweig",
-                "Statistische Region Hannover",
-                "Statistische Region Lüneburg",
-                "Statistische Region Weser-Ems",
-                "Niedersachsen",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Unnamed: 2",
-            "type": "number",
-            "constraints": {
-              "enum": [
+                "Hochschulreife",
+                "Fachhochschulreife1)",
+                "Realschulabschluss",
+                "Hauptschulabschluss",
+                "Abschluss Förderschule2)",
+                "Ohne Abschluss",
+                "Insgesamt",
                 ""
               ]
             }
@@ -42,6 +35,7 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "Insgesamt",
                 "Deutsche",
                 "Ausländerinnen und Ausländer",
                 ""
@@ -49,39 +43,8 @@
             }
           },
           {
-            "name": "Schulform",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Hauptschule",
-                "Realschule",
-                "Oberschule",
-                "Gymnasium",
-                "Integrierte Gesamtschule",
-                "Förderschule",
-                "Insgesamt",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Prozent",
-                "Anzahl",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }

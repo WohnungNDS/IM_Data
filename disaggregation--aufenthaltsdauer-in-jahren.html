@@ -51,15 +51,41 @@
                 .table-striped tbody tr:nth-of-type(2n+1) {
                     background-color: #f3f2f1;
                 }
+                #skiplink {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    z-index: 10000;
+                    width: 250px;
+                    margin-left: -125px;
+                    padding: 10px;
+                    background: white;
+                    text-align: center;
+                    border: 1px solid #0b0c0c;
+                    color: #0b0c0c;
+                    display: block;
+                }
+                .sr-only-focusable:not(:focus):not(:focus-within) {
+                    position: absolute !important;
+                    width: 1px !important;
+                    height: 1px !important;
+                    padding: 0 !important;
+                    margin: -1px !important;
+                    overflow: hidden !important;
+                    clip: rect(0, 0, 0, 0) !important;
+                    white-space: nowrap !important;
+                    border: 0 !important;
+                }
             </style>
         </head>
         <body>
+            <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">SDG data build documentation</a>
                 </div>
             </nav>
-            <main role="main">
+            <main id="main-content" role="main">
                 <div class="container">
                     <h1 style="margin:20px 0">Disaggregation: Aufenthaltsdauer in Jahren</h1>
                     <div>
@@ -94,32 +120,32 @@
   <tbody>
     <tr>
       <td><a href="disaggregation-value--1-4.html">1 - 4</a></td>
-      <td>156</td>
+      <td>159</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--10-und-mehr.html">10 und mehr</a></td>
-      <td>156</td>
+      <td>158</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--4-6.html">4 - 6</a></td>
-      <td>156</td>
+      <td>159</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--6-8.html">6 - 8</a></td>
-      <td>156</td>
+      <td>159</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--8-10.html">8 - 10</a></td>
-      <td>156</td>
+      <td>159</td>
       <td>1</td>
     </tr>
     <tr>
       <td><a href="disaggregation-value--unter-1.html">unter 1</a></td>
-      <td>156</td>
+      <td>159</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -127,7 +153,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--1-4.html\">1 - 4<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--10-und-mehr.html\">10 und mehr<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--4-6.html\">4 - 6<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--6-8.html\">6 - 8<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--8-10.html\">8 - 10<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--unter-1.html\">unter 1<\/a>","Disaggregation combinations using this value":156,"Number of indicators":1}];
+            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--1-4.html\">1 - 4<\/a>","Disaggregation combinations using this value":159,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--10-und-mehr.html\">10 und mehr<\/a>","Disaggregation combinations using this value":158,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--4-6.html\">4 - 6<\/a>","Disaggregation combinations using this value":159,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--6-8.html\">6 - 8<\/a>","Disaggregation combinations using this value":159,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--8-10.html\">8 - 10<\/a>","Disaggregation combinations using this value":159,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--unter-1.html\">unter 1<\/a>","Disaggregation combinations using this value":159,"Number of indicators":1}];
             </script>
             
         </div>

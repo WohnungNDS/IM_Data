@@ -1,14 +1,11 @@
 Value,Disaggregation combinations using this value,Number of indicators
-Allgemeine Hochschulreife,20,1
-Entlassung aus dem Berufsvorbereitungsjahr,20,1
-Entlassungen aus dem Berufsvorbereitungsjahr,20,1
-Erfolgreicher Besuch²,20,1
-Erreichte Abschlüsse insgesamt,20,1
-Fachhochschulreife,20,1
-Hauptschulabschluss,20,1
+Allgemeine Hochschulreife ¹⁾,40,1
+Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen,40,1
+Erfolgreicher Besuch,40,1
+Fachhochschulreife,40,1
+Hauptschulabschluss,40,1
+Insgesamt,40,1
 nachrichtlich: Abbruch im laufenden Schuljahr,20,1
-ohne erfolgr. Besuch m. gleichz. erworb. Hauptschulabschl.,20,1
-Ohne erfolgreichen Besuch/Abschluss,20,1
-ohne erfolgreichen Besuch/Abschluss,20,1
-Realschulabschluss,20,1
-Schulischer Teil der Fachhochschulreife,20,1
+Ohne erfolgreichen Besuch/Abschluss,40,1
+Realschulabschluss,40,1
+Schulischer Teil der Fachhochschulreife,40,1

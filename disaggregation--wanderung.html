@@ -51,15 +51,41 @@
                 .table-striped tbody tr:nth-of-type(2n+1) {
                     background-color: #f3f2f1;
                 }
+                #skiplink {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    z-index: 10000;
+                    width: 250px;
+                    margin-left: -125px;
+                    padding: 10px;
+                    background: white;
+                    text-align: center;
+                    border: 1px solid #0b0c0c;
+                    color: #0b0c0c;
+                    display: block;
+                }
+                .sr-only-focusable:not(:focus):not(:focus-within) {
+                    position: absolute !important;
+                    width: 1px !important;
+                    height: 1px !important;
+                    padding: 0 !important;
+                    margin: -1px !important;
+                    overflow: hidden !important;
+                    clip: rect(0, 0, 0, 0) !important;
+                    white-space: nowrap !important;
+                    border: 0 !important;
+                }
             </style>
         </head>
         <body>
+            <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">SDG data build documentation</a>
                 </div>
             </nav>
-            <main role="main">
+            <main id="main-content" role="main">
                 <div class="container">
                     <h1 style="margin:20px 0">Disaggregation: Wanderung</h1>
                     <div>
@@ -93,7 +119,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="disaggregation-value--fortzüge.html">Fortzüge</a></td>
+      <td><a href="disaggregation-value--fortzüge_.html">Fortzüge</a></td>
       <td>260</td>
       <td>1</td>
     </tr>
@@ -103,7 +129,7 @@
       <td>1</td>
     </tr>
     <tr>
-      <td><a href="disaggregation-value--zuzüge.html">Zuzüge</a></td>
+      <td><a href="disaggregation-value--zuzüge_.html">Zuzüge</a></td>
       <td>260</td>
       <td>1</td>
     </tr>
@@ -112,7 +138,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--fortz\u00fcge.html\">Fortz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--saldo-der-zu-und-fortz\u00fcge.html\">Saldo der Zu- und Fortz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--zuz\u00fcge.html\">Zuz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1}];
+            sdgBuild.tables['values-table'] = [{"Value":"<a href=\"disaggregation-value--fortz\u00fcge_.html\">Fortz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--saldo-der-zu-und-fortz\u00fcge.html\">Saldo der Zu- und Fortz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1},{"Value":"<a href=\"disaggregation-value--zuz\u00fcge_.html\">Zuz\u00fcge<\/a>","Disaggregation combinations using this value":260,"Number of indicators":1}];
             </script>
             
         </div>

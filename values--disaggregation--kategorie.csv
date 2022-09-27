@@ -1,32 +1,35 @@
 Value,Disaggregation combinations using this value,Number of indicators
-Abstand der Arbeitslosenquote von Ausländerinnen und Ausländern zu Insgesamt (bis unter 25 Jahren),1,1
+Abstand der Arbeitslosenquote von Ausländerinnen und Ausländern zu Insgesamt (bis unter 25 Jahren),3,1
 Abstand der Arbeitslosenquote von Ausländerinnen und Ausländern zu Insgesamt,3,1
 Anteil an allen Ausländerinnen und Ausländern,52,1
 Anteil an allen Einwohnerinnen und Einwohnern,52,1
-Arbeitslosenquote der Ausländerinnen und Ausländer bis unter 25 Jahren,1,1
+Arbeitslosenquote der Ausländerinnen und Ausländer bis unter 25 Jahren,3,1
 Arbeitslosenquote Insgesamt (alle Erwerbspersonen),3,1
-Arbeitslosenquote (Insgesamt) der bis unter 25-Jährigen,1,1
+Arbeitslosenquote (Insgesamt) der bis unter 25-Jährigen,3,1
 Arbeitslosenquote von Ausländerinnen und Ausländern (alle Erwerbspersonen),3,1
-Ausländische Studierende (Frauen),8,1
-Ausländische Studierende (Insgesamt),8,1
-Ausländische Studierende (Männer),8,1
-Bildungsausländerinnen und Bildungsausländer (Frauen),8,1
-Bildungsausländerinnen und Bildungsausländer (Insgesamt),8,1
-Bildungsausländerinnen und Bildungsausländer (Männer),8,1
-Bildungsinländerinnen und Bildungsinländer (Frauen),8,1
-Bildungsinländerinnen und Bildungsinländer (Insgesamt),8,1
-Bildungsinländerinnen und Bildungsinländer (Männer),8,1
-Empfängeinnen und Empfänger je 1000 Einwohnerinnen und Einwohner der betreffenden Bevölkerungsgruppe,315,1
-Empfängerinnen und Empfänger,315,1
+Aufenthaltsrecht nach FreizügG/EU,300,1
+Aufenthaltstitel nach nationalem Recht erforderlich,300,1
+Ausländische Studierende (Frauen),6,1
+Ausländische Studierende (Insgesamt),6,1
+Ausländische Studierende (Männer),6,1
+Bildungsausländerinnen und Bildungsausländer (Frauen),6,1
+Bildungsausländerinnen und Bildungsausländer (Insgesamt),6,1
+Bildungsausländerinnen und Bildungsausländer (Männer),6,1
+Bildungsinländerinnen und Bildungsinländer (Frauen),6,1
+Bildungsinländerinnen und Bildungsinländer (Insgesamt),6,1
+Bildungsinländerinnen und Bildungsinländer (Männer),6,1
 Erwerbslosenanteil,15,1
 Erwerbsquote,15,1
 Erwerbstätigenquote,15,1
 Fortzüge,8,1
 Insgesamt 3 bis unter 6 Jahre,2,1
 Insgesamt bis unter 3 Jahre,2,1
+Kein Aufenthaltstitel nach nationalem Recht erforderlich,300,1
 Kinder mit Migrationshintergrund 3 bis unter 6 Jahre,2,1
 Kinder mit Migrationshintergrund bis unter 3 Jahre,2,1
 Kinder ohne Migrationshintergrund 3 bis unter 6 Jahre,2,1
 Kinder ohne Migrationshintergrund bis unter 3 Jahre,2,1
+Ohne Aufenthaltstitel,300,1
 Saldo,8,1
+"von Erfordernis eines Aufenthaltstitels befreit, heimatlose Ausländer",300,1
 Zuzüge,8,1

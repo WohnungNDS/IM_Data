@@ -15,38 +15,35 @@
             "type": "integer"
           },
           {
-            "name": "Altersgruppe",
+            "name": "Migrationshintergrund",
             "type": "string",
             "constraints": {
               "enum": [
-                "18 – 25",
-                "25 – 35",
-                "15 – 65",
+                "ohne Migrationshintergrund",
+                "mit Migrationshintergrund",
                 ""
               ]
             }
           },
           {
-            "name": "Schulabschluss",
+            "name": "Migrationserfahrung",
             "type": "string",
             "constraints": {
               "enum": [
-                "Ohne Abschluss2)",
-                "Hauptschulabschluss",
-                "Realschulabschluss",
-                "(Fach-)Hochschulreife",
+                "mit eigener Migrationserfahrung",
+                "ohne eigene Migrationserfahrung",
                 ""
               ]
             }
           },
           {
-            "name": "Migrationsstatus",
+            "name": "Geschlecht",
             "type": "string",
             "constraints": {
               "enum": [
                 "Insgesamt",
-                "mit Migrationshintergrund",
-                "ohne Migrationshintergrund",
+                "Männer",
+                "Frauen",
                 ""
               ]
             }

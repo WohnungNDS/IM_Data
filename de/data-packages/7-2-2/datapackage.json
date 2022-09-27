@@ -1,0 +1,80 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Jahr"
+          },
+          {
+            "name": "Gebietseinheit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Niedersachsen",
+                "Deutschland",
+                ""
+              ]
+            },
+            "title": "Gebietseinheit"
+          },
+          {
+            "name": "Migrationsstatus",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "ohne Migrationshintergrund",
+                "mit Migrationshintergrund²⁾",
+                ""
+              ]
+            },
+            "title": "Migrationsstatus"
+          },
+          {
+            "name": "Gschlecht",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "männlich",
+                "weiblich",
+                ""
+              ]
+            },
+            "title": "Gschlecht"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Bezugspersonen mit selbstgenutzem Wohneigentum in 1 000",
+                "Eigentümerquote der Bezugspersonen mit selbstbewohnen Wohneigentum in Prozent³⁾",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "7-2-2",
+  "title": "Bezugspersonen in Privathaushalten mit selbst bewohntem Wohneigentum sowie Eigentümerquoten 2006 – 2018 nach Migrationsstatus und Geschlecht"
+}

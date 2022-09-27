@@ -15,13 +15,25 @@
             "type": "integer"
           },
           {
-            "name": "Nationalität",
+            "name": "Höchster Beruflicher Abschluss",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
-                "Deutsche",
-                "Ausländerinnen und Ausländer",
+                "Ohne Abschluss1)",
+                "Abgeschlossene Berufsausbildung",
+                "Tertiärer Abschluss",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Migrationshintergrund",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "mit und ohne Migrationshintergrund",
+                "mit Migrationshintergrund3)",
+                "ohne Migrationshintergrund",
                 ""
               ]
             }
@@ -43,7 +55,7 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Prozent",
+                "%",
                 ""
               ]
             }

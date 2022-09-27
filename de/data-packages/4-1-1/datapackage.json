@@ -16,7 +16,22 @@
             "title": "Jahr"
           },
           {
-            "name": "Staatsangehörigkeit",
+            "name": "Statistische Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Statistische Region Braunschweig",
+                "Statistische Region Hannover",
+                "Statistische Region Lüneburg",
+                "Statistische Region Weser-Ems",
+                "Niedersachsen",
+                ""
+              ]
+            },
+            "title": "Statistische Region"
+          },
+          {
+            "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
@@ -25,50 +40,41 @@
                 ""
               ]
             },
-            "title": "Staatsangehörigkeit"
+            "title": "Nationalität"
           },
           {
-            "name": "Erreichter Abschluss",
+            "name": "Schulform",
             "type": "string",
             "constraints": {
               "enum": [
-                "Allgemeine Hochschulreife",
-                "Fachhochschulreife",
-                "Schulischer Teil der Fachhochschulreife",
-                "Realschulabschluss",
-                "Hauptschulabschluss",
-                "Erfolgreicher Besuch²",
-                "Entlassungen aus dem Berufsvorbereitungsjahr",
-                "Ohne erfolgreichen Besuch/Abschluss",
-                "Erreichte Abschlüsse insgesamt",
-                "nachrichtlich: Abbruch im laufenden Schuljahr",
-                "Entlassung aus dem Berufsvorbereitungsjahr",
-                "ohne erfolgr. Besuch m. gleichz. erworb. Hauptschulabschl.",
-                "ohne erfolgreichen Besuch/Abschluss",
-                ""
-              ]
-            },
-            "title": "Erreichter Abschluss"
-          },
-          {
-            "name": "Besuchte Schule",
-            "type": "string",
-            "constraints": {
-              "enum": [
+                "Hauptschule",
+                "Realschule",
+                "Oberschule",
+                "Gymnasium",
+                "Integrierte Gesamtschule",
+                "Förderschule",
                 "Insgesamt",
-                "Berufsschule (Teilzeit)",
-                "Berufsgrundbildungsjahr schulisch",
-                "Berufseinstiegsklasse",
-                "Berufsvorbereitungsjahr",
-                "Berufsfachschule",
-                "Fachoberschule",
-                "Berufsoberschule",
-                "Berufl. Gymnasium",
-                "Fachschule",
                 ""
               ]
             },
-            "title": "Besuchte Schule"
+            "title": "Schulform"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Prozent",
+                "Anzahl",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
           },
           {
             "name": "Value",
@@ -81,5 +87,5 @@
   ],
   "profile": "data-package",
   "name": "4-1-1",
-  "title": "Schulabgängerinnen und Schulabgänger an berufsbildenden Schulen nach Schulart und Schulabschluss (B8)"
+  "title": "Verteilung der Schülerinnen und Schüler im 8. Schuljahrgang"
 }

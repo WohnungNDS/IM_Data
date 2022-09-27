@@ -19,9 +19,9 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Braunschweig Stadt",
-                "Salzgitter Stadt",
-                "Wolfsburg Stadt",
+                "Braunschweig, Stadt",
+                "Salzgitter, Stadt",
+                "Wolfsburg, Stadt",
                 "Gifhorn",
                 "Goslar",
                 "Helmstedt",
@@ -30,8 +30,7 @@
                 "Wolfenbüttel",
                 "Göttingen",
                 "Statistische Region Braunschweig",
-                "Hannover Region",
-                "Hannover Landeshauptstadt",
+                "Hannover  Region",
                 "Diepholz",
                 "Hameln-Pyrmont",
                 "Hildesheim",
@@ -51,11 +50,11 @@
                 "Uelzen",
                 "Verden",
                 "Statistische Region Lüneburg",
-                "Delmenhorst.Stadt",
-                "Emden Stadt",
-                "Oldenburg (Oldb) Stadt",
-                "Osnabrück Stadt",
-                "Wilhelmshaven Stadt",
+                "Delmenhorst, Stadt",
+                "Emden  Stadt",
+                "Oldenburg(Oldb), Stadt",
+                "Osnabrück, Stadt",
+                "Wilhelmshaven, Stadt",
                 "Ammerland",
                 "Aurich",
                 "Cloppenburg",
@@ -75,21 +74,36 @@
             }
           },
           {
-            "name": "Aufenthaltstitel",
+            "name": "Geschlecht",
             "type": "string",
             "constraints": {
               "enum": [
-                "Geflüchtete und geduldete Personen insgesamt",
-                "Niederlassungserlaubnis",
-                "Asylberechtigte und GFK-Flüchtlinge",
-                "Aufnahmeerklärung vor Schutz Resettlement Kontingentflüchtlinge",
-                "Verbot der Abschiebung Subsidiärer Schutz1)",
-                "Unmöglichkeit d. Ausreise aus rechtl. oder tats. Gründen",
-                "Bleiberecht (Aufenthaltsgewährung) und Opfer von Menschenhandel und organisierter Schwarzarbeit",
-                "Dringende persönliche o. humanitäre Gründe Härtefälle",
-                "Aufenthaltsgestattung zum Asylverfahren",
-                "Duldung",
-                "Familiennachzug",
+                "männlich",
+                "weiblich",
+                "insgesamt",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Kategorie",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Kein Aufenthaltstitel nach nationalem Recht erforderlich",
+                "Aufenthaltstitel nach nationalem Recht erforderlich",
+                "Ohne Aufenthaltstitel",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Anzahl",
+                "Prozent",
                 ""
               ]
             }
@@ -100,7 +114,7 @@
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
