@@ -16,19 +16,38 @@
             "title": "Jahr"
           },
           {
-            "name": "Nationalität",
+            "name": "Gebietseinheit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Deutsche",
-                "Ausländerinnen und Ausländer",
+                "Niedersachsen",
                 ""
               ]
             },
-            "title": "Nationalität"
+            "title": "Gebietseinheit"
           },
           {
-            "name": "Schulart",
+            "name": "Erreichter Schulabschluss",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "Allgemeine Hochschulreife¹⁾",
+                "Fachhochschulreife",
+                "Schulischer Teil der Fachhochschulreife",
+                "Realschulabschluss",
+                "Hauptschulabschluss",
+                "Erfolgreicher Besuch",
+                "Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen",
+                "Ohne erfolgreichen Besuch/Abschluss",
+                "nachrichtlich: Abbruch im laufenden Schuljahr",
+                ""
+              ]
+            },
+            "title": "Erreichter Schulabschluss"
+          },
+          {
+            "name": "Berufsbildende Schule",
             "type": "string",
             "constraints": {
               "enum": [
@@ -45,27 +64,19 @@
                 ""
               ]
             },
-            "title": "Schulart"
+            "title": "Berufsbildende Schule"
           },
           {
-            "name": "Erreichter Abschluss",
+            "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
-                "Allgemeine Hochschulreife ¹⁾",
-                "Fachhochschulreife",
-                "Schulischer Teil der Fachhochschulreife",
-                "Realschulabschluss",
-                "Hauptschulabschluss",
-                "Erfolgreicher Besuch",
-                "Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen",
-                "Ohne erfolgreichen Besuch/Abschluss",
-                "nachrichtlich: Abbruch im laufenden Schuljahr",
+                "Deutsche",
+                "Ausländerinnen und Ausländer",
                 ""
               ]
             },
-            "title": "Erreichter Abschluss"
+            "title": "Nationalität"
           },
           {
             "name": "Units",

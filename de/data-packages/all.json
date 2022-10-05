@@ -353,19 +353,83 @@
             "title": "Jahr"
           },
           {
-            "name": "Statistische Region",
+            "name": "Gebietseinheit",
             "type": "string",
             "constraints": {
               "enum": [
+                "Braunschweig, Stadt",
+                "Salzgitter, Stadt",
+                "Wolfsburg, Stadt",
+                "Gifhorn",
+                "Goslar",
+                "Helmstedt",
+                "Northeim",
+                "Peine",
+                "Wolfenbüttel",
+                "Göttingen",
                 "Statistische Region Braunschweig",
+                "Hannover  Region",
+                "dav. Hannover, Lhst.",
+                "dav. Hannover, Umland",
+                "Diepholz",
+                "Hameln-Pyrmont",
+                "Hildesheim",
+                "Holzminden",
+                "Nienburg (Weser)",
+                "Schaumburg",
                 "Statistische Region Hannover",
+                "Celle",
+                "Cuxhaven",
+                "Harburg",
+                "Lüchow-Dannenberg",
+                "Lüneburg",
+                "Osterholz",
+                "Rotenburg (Wümme)",
+                "Heidekreis",
+                "Stade",
+                "Uelzen",
+                "Verden",
                 "Statistische Region Lüneburg",
+                "Delmenhorst, Stadt",
+                "Emden  Stadt",
+                "Oldenburg(Oldb), Stadt",
+                "Osnabrück, Stadt",
+                "Wilhelmshaven, Stadt",
+                "Ammerland",
+                "Aurich",
+                "Cloppenburg",
+                "Emsland",
+                "Friesland",
+                "Grafschaft Bentheim",
+                "Leer",
+                "Oldenburg",
+                "Osnabrück",
+                "Vechta",
+                "Wesermarsch",
+                "Wittmund",
                 "Statistische Region Weser-Ems",
                 "Niedersachsen",
                 ""
               ]
             },
-            "title": "Statistische Region"
+            "title": "Gebietseinheit"
+          },
+          {
+            "name": "Schulgliederung",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Hauptschule",
+                "Realschule",
+                "Oberschule",
+                "Gymnasium",
+                "Integrierte Gesamtschule1)",
+                "Förderschule",
+                "Insgesamt",
+                ""
+              ]
+            },
+            "title": "Schulgliederung"
           },
           {
             "name": "Nationalität",
@@ -380,29 +444,12 @@
             "title": "Nationalität"
           },
           {
-            "name": "Schulform",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Hauptschule",
-                "Realschule",
-                "Oberschule",
-                "Gymnasium",
-                "Integrierte Gesamtschule",
-                "Förderschule",
-                "Insgesamt",
-                ""
-              ]
-            },
-            "title": "Schulform"
-          },
-          {
             "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "Prozent",
                 "Anzahl",
+                "Prozent",
                 ""
               ]
             },
@@ -776,7 +823,7 @@
             "title": "Jahr"
           },
           {
-            "name": "Land der Staatsabgehörigkeit",
+            "name": "Land der Staatsangehörigkeit",
             "type": "string",
             "constraints": {
               "enum": [
@@ -811,7 +858,7 @@
                 ""
               ]
             },
-            "title": "Land der Staatsabgehörigkeit"
+            "title": "Land der Staatsangehörigkeit"
           },
           {
             "name": "Units",
@@ -1226,41 +1273,75 @@
             "title": "Jahr"
           },
           {
-            "name": "Kategorie",
+            "name": "Gebietseinheit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Erwerbsquote",
-                "Erwerbstätigenquote",
-                "Erwerbslosenanteil",
+                "Braunschweig, Stadt",
+                "Salzgitter, Stadt",
+                "Wolfsburg, Stadt",
+                "Gifhorn",
+                "Goslar",
+                "Helmstedt",
+                "Northeim",
+                "Peine",
+                "Wolfenbüttel",
+                "Göttingen",
+                "Statistische Region Braunschweig",
+                "Hannover  Region",
+                "dav. Hannover, Lhst.",
+                "dav. Hannover, Umland",
+                "Diepholz",
+                "Hameln-Pyrmont",
+                "Hildesheim",
+                "Holzminden",
+                "Nienburg (Weser)",
+                "Schaumburg",
+                "Statistische Region Hannover",
+                "Celle",
+                "Cuxhaven",
+                "Harburg",
+                "Lüchow-Dannenberg",
+                "Lüneburg",
+                "Osterholz",
+                "Rotenburg (Wümme)",
+                "Heidekreis",
+                "Stade",
+                "Uelzen",
+                "Verden",
+                "Statistische Region Lüneburg",
+                "Delmenhorst, Stadt",
+                "Emden  Stadt",
+                "Oldenburg(Oldb), Stadt",
+                "Osnabrück, Stadt",
+                "Wilhelmshaven, Stadt",
+                "Ammerland",
+                "Aurich",
+                "Cloppenburg",
+                "Emsland",
+                "Friesland",
+                "Grafschaft Bentheim",
+                "Leer",
+                "Oldenburg",
+                "Osnabrück",
+                "Vechta",
+                "Wesermarsch",
+                "Wittmund",
+                "Statistische Region Weser-Ems",
+                "Niedersachsen",
                 ""
               ]
             },
-            "title": "Kategorie"
-          },
-          {
-            "name": "Migrationsstatus",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Insgesamt",
-                "ohne Migrationshintergrund",
-                "mit Migrationshintergrund",
-                "mit Migrationshintergrund und eigener Migrationserfahrung",
-                "mit Migrationshintergrund und ohne eigene Migrationserfahrung",
-                ""
-              ]
-            },
-            "title": "Migrationsstatus"
+            "title": "Gebietseinheit"
           },
           {
             "name": "Geschlecht",
             "type": "string",
             "constraints": {
               "enum": [
+                "Insgesamt",
                 "Männer",
                 "Frauen",
-                "Insgesamt",
                 ""
               ]
             },
@@ -1271,20 +1352,25 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "%",
+                "Anzahl",
                 ""
               ]
             },
             "title": "Units"
           },
           {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]
       },
-      "title": "Erwerbsquote, Erwerbstätigenquote und Erwerbslosenanteil nach Zuwanderungsgeschichte"
+      "title": "Sozialversicherungspflichtig beschäftigte Ausländerinnen und Ausländer"
     },
     {
       "path": "2-1-4/data.csv",
@@ -3039,7 +3125,7 @@
             "title": "Gebietseinheit"
           },
           {
-            "name": "Aufenthaltsdauer in Jahren",
+            "name": "Aufenthaltsdauer",
             "type": "string",
             "constraints": {
               "enum": [
@@ -3052,7 +3138,7 @@
                 ""
               ]
             },
-            "title": "Aufenthaltsdauer in Jahren"
+            "title": "Aufenthaltsdauer"
           },
           {
             "name": "Geschlecht",
@@ -3622,7 +3708,7 @@
           }
         ]
       },
-      "title": "Ausländerinnen und Ausländer in Niedersachsen nach Altersgruppen (im Alter von … bis unter … Jahren)"
+      "title": "Ausländerinnen und Ausländer in Niedersachsen nach Altersgruppen"
     },
     {
       "path": "4-1-5/data.csv",
@@ -3695,6 +3781,82 @@
         ]
       },
       "title": "Frühe Schulabgängerinnen und Schulabgänger nach Geschlecht, Zuwanderungsgeschichte und eigener Migrationserfahrung (in Prozent)"
+    },
+    {
+      "path": "5-1-2/data.csv",
+      "name": "5-1-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Jahr"
+          },
+          {
+            "name": "Kategorie",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Erwerbsquote",
+                "Erwerbstätigenquote",
+                "Erwerbslosenanteil",
+                ""
+              ]
+            },
+            "title": "Kategorie"
+          },
+          {
+            "name": "Migrationsstatus",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "ohne Migrationshintergrund",
+                "mit Migrationshintergrund",
+                "mit Migrationshintergrund und eigener Migrationserfahrung",
+                "mit Migrationshintergrund und ohne eigene Migrationserfahrung",
+                ""
+              ]
+            },
+            "title": "Migrationsstatus"
+          },
+          {
+            "name": "Geschlecht",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Männer",
+                "Frauen",
+                "Insgesamt",
+                ""
+              ]
+            },
+            "title": "Geschlecht"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Erwerbsquote, Erwerbstätigenquote und Erwerbslosenanteil nach Zuwanderungsgeschichte"
     },
     {
       "path": "1-3-3/data.csv",
@@ -4019,7 +4181,7 @@
             "title": "Migrationsstatus"
           },
           {
-            "name": "Lebennsform",
+            "name": "Lebensform",
             "type": "string",
             "constraints": {
               "enum": [
@@ -4030,7 +4192,7 @@
                 ""
               ]
             },
-            "title": "Lebennsform"
+            "title": "Lebensform"
           },
           {
             "name": "mit oder ohne ledige Kinder",
@@ -4285,24 +4447,25 @@
             "title": "Gebietseinheit"
           },
           {
-            "name": "Geschlecht",
+            "name": "Qualifikation",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
-                "Männer",
-                "Frauen",
+                "hoch",
+                "mittel",
+                "niedrig",
+                "unbekannt",
                 ""
               ]
             },
-            "title": "Geschlecht"
+            "title": "Qualifikation"
           },
           {
             "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "Anzahl",
+                "Prozent",
                 ""
               ]
             },
@@ -4315,12 +4478,12 @@
           },
           {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
       },
-      "title": "Sozialversicherungspflichtig beschäftigte Ausländerinnen und Ausländer"
+      "title": "Sozialversicherungspflichtig beschäftigte Ausländerinnen und Ausländer nach Art der Ausbildung"
     },
     {
       "path": "5-3-1/data.csv",
@@ -4515,122 +4678,6 @@
       "title": "Schulabgängerinnen und Schulabgänger ohne Hauptschulabschluss nach Nationalität"
     },
     {
-      "path": "5-2-3/data.csv",
-      "name": "5-2-3",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Jahr"
-          },
-          {
-            "name": "Gebietseinheit",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Braunschweig, Stadt",
-                "Salzgitter, Stadt",
-                "Wolfsburg, Stadt",
-                "Gifhorn",
-                "Goslar",
-                "Helmstedt",
-                "Northeim",
-                "Peine",
-                "Wolfenbüttel",
-                "Göttingen",
-                "Statistische Region Braunschweig",
-                "Hannover  Region",
-                "dav. Hannover, Lhst.",
-                "dav. Hannover, Umland",
-                "Diepholz",
-                "Hameln-Pyrmont",
-                "Hildesheim",
-                "Holzminden",
-                "Nienburg (Weser)",
-                "Schaumburg",
-                "Statistische Region Hannover",
-                "Celle",
-                "Cuxhaven",
-                "Harburg",
-                "Lüchow-Dannenberg",
-                "Lüneburg",
-                "Osterholz",
-                "Rotenburg (Wümme)",
-                "Heidekreis",
-                "Stade",
-                "Uelzen",
-                "Verden",
-                "Statistische Region Lüneburg",
-                "Delmenhorst, Stadt",
-                "Emden  Stadt",
-                "Oldenburg(Oldb), Stadt",
-                "Osnabrück, Stadt",
-                "Wilhelmshaven, Stadt",
-                "Ammerland",
-                "Aurich",
-                "Cloppenburg",
-                "Emsland",
-                "Friesland",
-                "Grafschaft Bentheim",
-                "Leer",
-                "Oldenburg",
-                "Osnabrück",
-                "Vechta",
-                "Wesermarsch",
-                "Wittmund",
-                "Statistische Region Weser-Ems",
-                "Niedersachsen",
-                ""
-              ]
-            },
-            "title": "Gebietseinheit"
-          },
-          {
-            "name": "Qualifikation",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "hoch",
-                "mittel",
-                "niedrig",
-                "unbekannt",
-                ""
-              ]
-            },
-            "title": "Qualifikation"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Prozent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string",
-            "title": "GeoCode"
-          },
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          }
-        ]
-      },
-      "title": "Sozialversicherungspflichtig beschäftigte Ausländerinnen und Ausländer nach Art der Ausbildung"
-    },
-    {
       "path": "7-2-2/data.csv",
       "name": "7-2-2",
       "profile": "tabular-data-resource",
@@ -4671,7 +4718,7 @@
             "title": "Migrationsstatus"
           },
           {
-            "name": "Gschlecht",
+            "name": "Geschlecht",
             "type": "string",
             "constraints": {
               "enum": [
@@ -4681,7 +4728,7 @@
                 ""
               ]
             },
-            "title": "Gschlecht"
+            "title": "Geschlecht"
           },
           {
             "name": "Units",
@@ -4702,7 +4749,7 @@
           }
         ]
       },
-      "title": "Bezugspersonen in Privathaushalten mit selbst bewohntem Wohneigentum sowie Eigentümerquoten 2006 – 2018 nach Migrationsstatus und Geschlecht"
+      "title": "Bezugspersonen in Privathaushalten mit selbst bewohntem Wohneigentum sowie Eigentümerquoten nach Migrationsstatus und Geschlecht"
     },
     {
       "path": "2-3-3/data.csv",
@@ -5066,19 +5113,38 @@
             "title": "Jahr"
           },
           {
-            "name": "Nationalität",
+            "name": "Gebietseinheit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Deutsche",
-                "Ausländerinnen und Ausländer",
+                "Niedersachsen",
                 ""
               ]
             },
-            "title": "Nationalität"
+            "title": "Gebietseinheit"
           },
           {
-            "name": "Schulart",
+            "name": "Erreichter Schulabschluss",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Insgesamt",
+                "Allgemeine Hochschulreife¹⁾",
+                "Fachhochschulreife",
+                "Schulischer Teil der Fachhochschulreife",
+                "Realschulabschluss",
+                "Hauptschulabschluss",
+                "Erfolgreicher Besuch",
+                "Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen",
+                "Ohne erfolgreichen Besuch/Abschluss",
+                "nachrichtlich: Abbruch im laufenden Schuljahr",
+                ""
+              ]
+            },
+            "title": "Erreichter Schulabschluss"
+          },
+          {
+            "name": "Berufsbildende Schule",
             "type": "string",
             "constraints": {
               "enum": [
@@ -5095,27 +5161,19 @@
                 ""
               ]
             },
-            "title": "Schulart"
+            "title": "Berufsbildende Schule"
           },
           {
-            "name": "Erreichter Abschluss",
+            "name": "Nationalität",
             "type": "string",
             "constraints": {
               "enum": [
-                "Insgesamt",
-                "Allgemeine Hochschulreife ¹⁾",
-                "Fachhochschulreife",
-                "Schulischer Teil der Fachhochschulreife",
-                "Realschulabschluss",
-                "Hauptschulabschluss",
-                "Erfolgreicher Besuch",
-                "Entlassungen aus BVJ bzw. aus den BS V-Bildungslehrgängen",
-                "Ohne erfolgreichen Besuch/Abschluss",
-                "nachrichtlich: Abbruch im laufenden Schuljahr",
+                "Deutsche",
+                "Ausländerinnen und Ausländer",
                 ""
               ]
             },
-            "title": "Erreichter Abschluss"
+            "title": "Nationalität"
           },
           {
             "name": "Units",
