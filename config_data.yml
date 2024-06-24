@@ -104,7 +104,8 @@ reporting_status_extra_fields: []
     # name_from_data_column: Gebietseinheit
 
 map_layers:
-  - geojson_file: NI_Kurz_diss.geojson
+  - 
+    geojson_file: NI_Kurz_diss.geojson
     name_property: GEN
     id_property: AGS
     output_subfolder: map
